@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nsscache:
+    build: ./nsscache
+    ports:
+      - 22
+  consul:
+    image: consul
+    ports:
+      - 8500
